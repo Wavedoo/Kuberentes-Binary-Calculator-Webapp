@@ -41,3 +41,20 @@ Docker, Kubernetes and GKE
    * Editor: It’s a text editor that allows you to edit plain text file as shown in the following figure. You can switch back to the console by clicking **Open Terminal** button  
 
       ![a7](figures/a7.jpg)  
+      
+## Setup Google Kubernetes Engine (GKE)
+To setup GKE, execute the following commands through the console within your Google Cloud Platform (GCP) project.
+   1. Set the default compute zone to **northamerica-northeast1-b** 
+   ```cmd
+   gcloud config set compute/zone northamerica-northeast1-b  
+   ```
+   2. Enable GKE by searching for **Kubernetes Engine**, select **Kubernetes Engine API**, click **Enable**. 
+   
+      ![MS3 figure1](figures/cl3-1.jpg)
+   
+   3. Wait until the API is enabled then, create a three-nodes cluster on GKE called **sofe4630u**. 
+   ```cmd
+   gcloud container clusters create sofe4630u --num-nodes=3 
+   ```
+      **Note**: if the authorization windows popped up, click Authorize 
+      **Note**: if you got an error that there is no available resources to create the nodes, you may need to change the default compute zone (e.g. to **us-central1-a** ) 
