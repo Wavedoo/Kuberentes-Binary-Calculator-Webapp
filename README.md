@@ -53,9 +53,10 @@ To setup GKE, execute the following commands through the console within your Goo
       ![MS3 figure1](figures/cl3-1.jpg)
    
    3. Wait until the API is enabled then, create a three-nodes cluster on GKE called **sofe3980u**. 
-   ```cmd
-   gcloud container clusters create sofe3980u --num-nodes=3 
-   ```
+      ```cmd
+      gcloud container clusters create sofe3980u --num-nodes=3 
+      ```
+   
       **Note**: if the authorization windows popped up, click Authorize 
       **Note**: if you got an error that there is no available resources to create the nodes, you may need to change the default compute zone (e.g. to **us-central1-a** ) 
 
