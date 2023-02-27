@@ -172,10 +172,10 @@ In this section the MySQL image will be deployed over the GKE clusterusing YAML 
       kubectl create -f mysql-service.yaml
       ```
       The important lines in the mysql-service.yaml file are:
-         * **Line 8**: the port number that will be assigned to the external IP
-         * **Line 10**:  the name of application that will be targeted by the service.
+      * **Line 8**: the port number that will be assigned to the external IP
+      * **Line 10**:  the name of application that will be targeted by the service.
      
-            ![MS3 figure3](figures/cl3-3.jpg)      
+         ![MS3 figure3](figures/cl3-3.jpg)      
    
    2. To check the status of the service, use this command 
       ```cmd 
@@ -229,10 +229,14 @@ In this section, a previous version of the Maven project created at milestone 2 
    1. seach for **Container Registry**. then Enable it
       ![Dockerfile](figures/d1.jpg)         
    3. ```cmd
-   docker build -t gcr.io/verdant-axiom-378714/binarycalculator .
+   docker build -t gcr.io/<Project-ID>/binarycalculator .
    ```
 5. To be able to use the image globally, it should be pushed into the Container registry.
    ```cmd
-   docker push gcr.io/verdant-axiom-378714/binarycalculator .
+   docker push gcr.io/<Project-ID\>/binarycalculator .
    ```
-7. 
+7. To deploy the image using GKE
+   ```cmd
+   kubectl create deployment binarycalculator-deployment --image gcr.io/<Project-ID\>/binarycalculator --port=8080 
+   ```
+8. To assign an IP to the deployment
