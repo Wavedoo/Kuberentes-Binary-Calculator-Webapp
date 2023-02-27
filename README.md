@@ -208,4 +208,13 @@ In this section the MySQL image will be deployed over the GKE clusterusing YAML 
       kubectl delete -f mysql-service.yaml
       ```  
 ## Deploy Maven Project
-In this section, a previous version of the Maven project created at milestone 2 will be converted into a Docker image. GKE will be used to Deploy it.
+In this section, a previous version of the Maven project created at milestone 2 (BinaryCalculatorWebapp) will be converted into a Docker image. GKE will be used to Deploy it.
+1. From GCP console, change directory to the path **/BinaryCalculatorWebapp** at the cloned repository. Then, build the application to generate the WAR file. 
+   ```cmd
+   cd ~/BinaryCalculatorWebapp
+   mvn package
+   ```
+3. a file is added with the name **Dockerfile**. It contain the steps necessary to create the docker image. the steps can be summarized as:
+   * line 1: starting with a base image 
+4. 
+5. 
