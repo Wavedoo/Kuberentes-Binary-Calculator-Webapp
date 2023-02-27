@@ -143,7 +143,7 @@ In this section the MySQL image will be deployed over the GKE clusterusing YAML 
    ```
 2. run the following command to deploy the mysql 
    ```cmd 
-   cd ~/SOFE3980U-Lab3/mySQL
+   cd ~/SOFE3980U-Lab3/MySQL
    kubectl create -f mysql-deploy.yaml
    ```
    The command will deploy the template stored in the **mysql-deploy.yaml** into GKE. The file is shown in the following figure and can be interpreted as:
@@ -171,7 +171,7 @@ In this section the MySQL image will be deployed over the GKE clusterusing YAML 
 5. To give the deployment an IP address 
    1. A load Balancer service should be created using the mysql-service.yaml file from the cloned gitHub
       ```cmd 
-      cd ~/SOFE3980U-Lab3/mySQL
+      cd ~/SOFE3980U-Lab3/MySQL
       kubectl create -f mysql-service.yaml
       ```
       The important lines in the mysql-service.yaml file are:
