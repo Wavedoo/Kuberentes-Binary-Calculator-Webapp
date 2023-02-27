@@ -254,8 +254,8 @@ In this section, a previous version of the Maven project created at milestone 2 
 9. Get the IP associated with the service and access the application with that IP at port 8080.
 
 ## Discussion:
-1. Briefly summarize Summarize what you have learned about docker and Kubernetes including the used terminologies and their descriptions. 
-2. What‘s the advantages and disadvantages of using docker images
+1. Briefly summarize what you have learned about docker and Kubernetes including the used terminologies and their descriptions. 
+2. What‘s the advantages and disadvantages of using docker images?
 
 ## Design:
 * Update the Binary Calculator Application using the last version you implemented in the previous milestone
