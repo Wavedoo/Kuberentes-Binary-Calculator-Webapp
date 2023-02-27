@@ -89,7 +89,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
       Kubernetes exec command allows you to execute a certain command within a certain pod in interactive (-i option) and by using the Linux terminal (-t option). The command we want to execute is mysql which open a cli interface to the MySQL database. It has two options, the first is -u followed by the username, i.e. root. The second is -p which asks you to enter the root password you got in a). Note, there is no whitespace between the -u and root. 
    3. The first step after successfully login, is to change the root password, using the following MySQL command. 
       ```sql
-      ALTER USER 'root'@'localhost' IDENTIFIED BY <new-password> ; 
+      ALTER USER 'root'@'localhost' IDENTIFIED BY '<new-password>' ; 
       ```
    4. Then you can run any MySQL command, like 
       ``` cmd
