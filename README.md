@@ -241,7 +241,7 @@ In this section, a previous version of the Maven project created at milestone 2 
       ![Dockerfile](figures/d3.jpg)         
    2. Push the image to the **Google Container Registry**.
       ```cmd
-      docker push gcr.io/<Project-ID\>/binarycalculator .
+      docker push gcr.io/<Project-ID>/binarycalculator
       ```
 7. To deploy the image using GKE
    ```cmd
