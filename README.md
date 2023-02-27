@@ -268,6 +268,6 @@ In this section, a previous version of the Maven project created at milestone 2 
    * The discussion part.
    * Git hub with your Binary Calculator Application and the YAML files.
    * Instructions you used to create and deploy your application.
-   * The Ip of Your application (will be checked by the grader)
+   * The IP of Your application (will be checked by the grader)
 2. An audiable video of about 5 minutes showing the MySQL deploying (the two techniques).  
 3. An audiable video of about 3 minutes showing the deploying and executing of the Binary Calculator Application.
