@@ -214,7 +214,24 @@ In this section, a previous version of the Maven project created at milestone 2 
    cd ~/SOFE3980U-Lab3/BinaryCalculatorWebapp
    mvn package
    ```
-3. a file is added with the name **Dockerfile**. It contain the steps necessary to create the docker image. the steps can be summarized as:
-   * line 1: starting with a base image 
-4. 
-5. 
+2. A new file is added with the name **Dockerfile** at the same path. It contain the steps necessary to create the docker image. the steps can be summarized as:
+   * line 1: starting with a base image.
+   * line 2: creat a volume **tmp** used by the TomCat server for temporary files.
+   * line 3: copy the war file(s) from the path ./target at the host machine to the working directory at the docker image.
+   * line 4: run the web application
+      ![Dockerfile](figures/d1.jpg)         
+      
+3. Get the Project ID,
+   ![Project-ID](figures/d2.jpg)
+      
+4. To create a docker image using **Dockerfile**, run the following command after replacing **\<Project-ID\>** with your project ID.
+   1. seach for **Container Registry**. then Enable it
+      ![Dockerfile](figures/d1.jpg)         
+   3. ```cmd
+   docker build -t gcr.io/verdant-axiom-378714/binarycalculator .
+   ```
+5. To be able to use the image globally, it should be pushed into the Container registry.
+   ```cmd
+   docker push gcr.io/verdant-axiom-378714/binarycalculator .
+   ```
+7. 
