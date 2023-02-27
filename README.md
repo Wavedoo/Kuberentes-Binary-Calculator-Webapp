@@ -206,8 +206,9 @@ In this section the MySQL image will be deployed over the GKE clusterusing YAML 
       exit
       ```
    
-   4. (**optional**) after creating a video for submission, you can delete the deployment by using the following command (**Don’t run it right now**)
+   4. To delete the deployment and the service, use the following command 
        ```cmd
+       cd ~/SOFE3980U-Lab3/MySQL
       kubectl delete -f mysql-deploy.yaml
       kubectl delete -f mysql-service.yaml
       ```  
