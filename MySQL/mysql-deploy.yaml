@@ -19,9 +19,9 @@ spec:
             - name: MYSQL_ROOT_PASSWORD
               value: passwrd
             - name: MYSQL_USER
-              value: usr
+              value: user
             - name: MYSQL_PASSWORD
-              value: sofe4630u
+              value: sofe3980u
             - name: MYSQL_DATABASE
               value: Readings
           ports:
