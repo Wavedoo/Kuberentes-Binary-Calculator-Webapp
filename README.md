@@ -107,7 +107,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
       Again, there is no whitespaces between -p and the password 
    7. To create a new user, use the following MySQL command 
       ```cmd
-      CREATE USER 'user'@'%' IDENTIFIED BY 'sofe4790u'; 
+      CREATE USER 'user'@'%' IDENTIFIED BY 'sofe3980u'; 
       GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' WITH GRANT OPTION; 
       ```
    8. Now exit the MySQL CLI, if you already logged into it. 
@@ -127,7 +127,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
       
    3. Once you get a valid external IP address, you can use it to connect to the deployed MySQL server from any machine. For example, to connect to it from the GCP console, you can use the following command.
       ```cmd
-      mysql -uuser -psofe4790u -h<IP-address> 
+      mysql -uuser -psofe3980u -h<IP-address> 
       ```
 6. To delete the deployment and the service
    ```cmd
