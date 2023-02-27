@@ -224,15 +224,19 @@ In this section, a previous version of the Maven project created at milestone 2 
    * line 2: creat a volume **tmp** used by the TomCat server for temporary files.
    * line 3: copy the war file(s) from the path ./target at the host machine to the working directory at the docker image.
    * line 4: run the web application
-      ![Dockerfile](figures/d1.jpg)         
+   
+      ![Dockerfile](figures/d1.JPG)         
       
 3. Get the Project ID,
+
    ![Project-ID](figures/d2.jpg)
       
 4. To create a docker image using **Dockerfile**, run the following command after replacing **\<Project-ID\>** with your project ID.
    1. seach for **Container Registry**. then Enable it
-      ![Dockerfile](figures/d1.jpg)         
-   3. ```cmd
+   
+      ![Dockerfile](figures/d3.jpg)         
+     
+   ```cmd
    docker build -t gcr.io/<Project-ID>/binarycalculator .
    ```
 5. To be able to use the image globally, it should be pushed into the Container registry.
