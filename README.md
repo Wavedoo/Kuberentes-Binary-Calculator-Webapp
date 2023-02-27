@@ -122,7 +122,9 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
       kubectl get service 
       ```
       It may take some time until the external IP address is changed from pending to a valid IP address. You may need to repeat the previous command.
+      
       ![MS3 figure4](figures/cl3-4.jpg)      
+      
    3. Once you get a valid external IP address, you can use it to connect to the deployed MySQL server from any machine. For example, to connect to it from the GCP console, you can use the following command.
       ```cmd
       mysql -uuser -psofe4790u -h<IP-address> 
@@ -132,7 +134,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
    kubectl delete deployment mysql-deployment 
    kubectl delete service mysql-service 
    ```
-## Deployment using YAML files
+## Deployment using YAML files (the easiest way)
 In this section the MySQL image will be deployed over the GKE clusterusing YAML files. A YAML file is a file containing the configuration used to set the deployment, and the service.
 1. Clone the gitGub repository
    ```cmd 
