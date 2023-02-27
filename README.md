@@ -232,17 +232,17 @@ In this section, a previous version of the Maven project created at milestone 2 
    ![Project-ID](figures/d2.jpg)
       
 4. To create a docker image using **Dockerfile**, run the following command after replacing **\<Project-ID\>** with your project ID.
-   1. seach for **Container Registry**. then Enable it
-   
-      ![Dockerfile](figures/d3.jpg)         
-     
    ```cmd
    docker build -t gcr.io/<Project-ID>/binarycalculator .
    ```
 5. To be able to use the image globally, it should be pushed into the Container registry.
-   ```cmd
-   docker push gcr.io/<Project-ID\>/binarycalculator .
-   ```
+   1. Search for **Container Registry**. then Enable it
+   
+      ![Dockerfile](figures/d3.jpg)         
+   2. Push the image to the **Google Container Registry**.
+      ```cmd
+      docker push gcr.io/<Project-ID\>/binarycalculator .
+      ```
 7. To deploy the image using GKE
    ```cmd
    kubectl create deployment binarycalculator-deployment --image gcr.io/<Project-ID\>/binarycalculator --port=8080 
