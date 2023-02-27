@@ -77,7 +77,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
    ```
    check that the deployment is available and that the pod is running successfully (it may take some time until everything is settled down) 
 4. To access the MySQL logs,  
-   1. According to the [image documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-docker.html), as we didn’t specify the root password, it will be generated randomly. To get that password, the logs generated locally by the pod should be accessed and filtered it for a certain line using the following command 
+   1. According to the [image documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-docker.html), as we didn’t specify the root password, it will be generated randomly. To get that password, the logs generated locally by the pod should be accessed and filtered it for a certain line using the following command after replacing **\<pod-name\>** with the pod name obtained by the previous step.
       ```cmd
       kubectl logs <pod-name> 2>&1 |grep GENERATED 
       ```
