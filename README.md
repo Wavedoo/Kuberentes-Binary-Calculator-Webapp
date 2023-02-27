@@ -248,3 +248,25 @@ In this section, a previous version of the Maven project created at milestone 2 
    kubectl create deployment binarycalculator-deployment --image gcr.io/<Project-ID\>/binarycalculator --port=8080 
    ```
 8. To assign an IP to the deployment
+      ```cmd
+      kubectl expose deployment binarycalculator-deployment --type=LoadBalancer --name=binarycalculator-service 
+      ```
+9. Get the IP associated with the service and access the application with that IP at port 8080.
+
+## Discussion:
+1. Briefly summarize Summarize what you have learned about docker and Kubernetes including the used terminologies and their descriptions. 
+2. What‘s the advantages and disadvantages of using docker images
+
+## Design:
+* Update the Binary Calculator Application using the last version you implemented in the previous milestone
+* Delete both the running deployment and service. Write YAML file(s) to replace them. Then, redeploy them using the YAML file(s).
+
+## Deliverables:
+
+1. A report that includes
+   * The discussion part.
+   * Git hub with your Binary Calculator Application and the YAML files.
+   * Instructions you used to create and deploy your application.
+   * The Ip of Your application (will be checked by the grader)
+2. An audiable video of about 5 minutes showing the MySQL deploying (the two techniques).  
+3. An audiable video of about 3 minutes showing the deploying and executing of the Binary Calculator Application.
