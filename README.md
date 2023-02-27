@@ -134,6 +134,7 @@ As an example of Dokcer images, we will deploy a pre-exist MySQL image.
    kubectl delete deployment mysql-deployment 
    kubectl delete service mysql-service 
    ```
+   
 ## Deployment using YAML files (the easiest way)
 In this section the MySQL image will be deployed over the GKE clusterusing YAML files. A YAML file is a file containing the configuration used to set the deployment, and the service.
 1. Clone the gitGub repository
