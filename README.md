@@ -155,7 +155,7 @@ In this section, the MySQL image will be deployed over the GKE cluster using YAM
    *	**Line 6**: indicates that only a single pod will be used
    *	**Line 9**: provides the name of the application that will be accessed by the pod.
    *	**Line 16**: provides the ID of the Docker image to be deployed
-   *	**Lines 19-24**: define image-dependent environment variables that define username/password (**usr/sofe4630u**), and a schema (**Readings**).
+   *	**Lines 19-24**: define image-dependent environment variables that define username/password (**user/sofe3980u**), and a schema (**Readings**).
    *	**Line 26**: defines the port number that will be used by the image.
       
       ![MS3 figure2](figures/cl3-2.jpg)      
@@ -191,7 +191,7 @@ In this section, the MySQL image will be deployed over the GKE cluster using YAM
 6. To access the MySQL server using the IP address,
      1. From the GCP console ( or any other device in which MySQL client is installed), run the following commands. Before running the command, replace the **\<IP-address\>** with the external IP obtained in the previous step. The options -u, -p**, and **-h** are used to specify the **username**, **password**, and **host IP** of the deployed server, respectively. 
       ```cmd
-      mysql -uusr -psofe4630u -h<IP-address>
+      mysql -uuser -psofe3980u -h<IP-address>
       ```
    2. Try to run the following SQL statements 
       ```sql
