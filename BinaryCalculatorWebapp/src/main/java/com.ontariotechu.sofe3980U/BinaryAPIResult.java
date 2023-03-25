@@ -24,5 +24,5 @@ public class BinaryAPIResult {
 	public String getResult(){
 		return result;
 	}
-	
+
 }
